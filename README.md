@@ -1,1 +1,1 @@
-"# Task given at cloudwiry in Reactjs" 
+Task given at cloudwiry in Reactjs
