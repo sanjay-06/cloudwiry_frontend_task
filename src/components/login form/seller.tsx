@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect } from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import './login.css'
+import '../../styles/login.css'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
@@ -89,7 +89,7 @@ const reducer = (state: State, action: Action): State => {
   }
 }
 
-const Buyer = () => {
+const Seller = () => {
   const classes = useStyles();
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -111,8 +111,10 @@ const Buyer = () => {
     if (state.username === 'abc@email.com' && state.password === 'password') {
       dispatch({
         type: 'loginSuccess',
-        payload: 'Login Successfully'
+        payload: 'Login Successfull'
       });
+      
+
     } else {
       dispatch({
         type: 'loginFailed',
@@ -143,8 +145,7 @@ const Buyer = () => {
       });
     }
   return (
-    <form noValidate autoComplete="off" id="card2">
-          <div>
+        <form noValidate autoComplete="off" id="card1">
             <TextField
               error={state.isError}
               fullWidth
@@ -168,7 +169,6 @@ const Buyer = () => {
               onChange={handlePasswordChange}
               onKeyPress={handleKeyPress}
             />
-          </div>
           <Button
             variant="contained"
             size="large"
@@ -182,4 +182,4 @@ const Buyer = () => {
   );
 }
 
-export default Buyer;
+export default Seller;

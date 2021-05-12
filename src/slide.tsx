@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import './login.css'
+import './styles/login.css'
 import $ from 'jquery'
 import 'jquery'
-import Buyer from './buyer';
-import Seller from './seller';
+import Buyer from './components/login form/buyer';
+import Seller from './components/login form/seller';
 
 function Slide() {
   useEffect(()=>{
