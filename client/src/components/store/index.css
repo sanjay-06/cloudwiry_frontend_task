@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 html {
-  font-size: 62.5%;
+  font-size: 80%;
   box-sizing: border-box;
-  overflow-y: scroll;
 }
 body,
 #root {
@@ -132,6 +131,10 @@ footer {
 .filter div {
   flex: 1;
 }
+select
+{
+  width:300px
+}
 /* Index.css */
 .cart {
   padding: 1rem;
@@ -252,4 +255,7 @@ td {
 }
 th {
   text-align: left;
+}
+.modal-submit{
+  float: right;
 }

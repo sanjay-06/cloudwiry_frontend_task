@@ -1,14 +1,12 @@
 import React,{ useState } from 'react'
-import logo from './images/dress1.jpg'
 import Fade from 'react-awesome-reveal'
 
 export default function Cart(props:any) {
     const cartItems=props.cartItems
     const [showCheckout,checkout]=useState(false)
     const [Name,setname]=useState("")
-    const [Email,setemail]=useState("")
-    const [Address,setaddress]=useState("")
-    console.log(cartItems.length)
+    const [Email]=useState("")
+    const [Address]=useState("")
     const handleInput = (e:any) => {
         setname(e.target.value );
       };

@@ -113,8 +113,7 @@ const Seller = () => {
         type: 'loginSuccess',
         payload: 'Login Successfull'
       });
-      
-
+      window.location.href='/Home'
     } else {
       dispatch({
         type: 'loginFailed',

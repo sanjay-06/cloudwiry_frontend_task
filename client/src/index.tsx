@@ -2,10 +2,17 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from './App';
 import shopping from './components/store/App'
+import Home from './components/seller/pages/Home';
+import Reports from './components/seller/pages/Reports';
+import Products from './components/seller/pages/Products';
+
 const Application = () => (
   <Router>
     <Route exact path="/" component={App} />
     <Route exact path="/shopping" component={shopping} />
+    <Route path='/Home' exact component={Home} />
+    <Route path='/reports' component={Reports} />
+    <Route path='/products' component={Products} />
   </Router>
 );
 
