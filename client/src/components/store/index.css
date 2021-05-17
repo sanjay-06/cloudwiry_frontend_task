@@ -17,7 +17,10 @@ textarea {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
 }
-
+.logout
+{
+  float: right;
+}
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -58,7 +61,34 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.modalbutton
+{
+  width: 150px;
+  margin-left:50%;
+  align-items: center;
+  padding: 30px;
+  height: 40px;
+}
 
+.cards
+{
+  width: 50%;
+  margin:auto;
+  margin-top: 10rem;
+  box-shadow: #203040 10px;
+}
+
+.accordian
+{
+  width: 50%;
+  margin:auto;
+}
+.acc
+{
+  margin: auto;
+  margin-top:3%;
+  width: 50%;
+}
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -157,6 +187,16 @@ select
 }
 .cart-items li div {
   padding: 0.5rem;
+}
+.wish
+{
+  float:right;
+  background-color: #203040;
+  margin-right: 10%;
+}
+header,footer
+{
+  padding: 15px;
 }
 .cart-items li div:last-child {
   flex: 1;

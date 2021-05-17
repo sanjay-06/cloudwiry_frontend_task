@@ -3,6 +3,7 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import '../../styles/login.css'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -14,7 +15,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     loginBtn: {
       marginTop: theme.spacing(2),
-      flexGrow: 1
+      flexGrow: 1,
+      width:150,
+      padding:10
     },
     header: {
       textAlign: 'center',
@@ -145,6 +148,7 @@ const Seller = () => {
     }
   return (
         <form noValidate autoComplete="off" id="card1">
+          <div>
             <TextField
               error={state.isError}
               fullWidth
@@ -168,14 +172,15 @@ const Seller = () => {
               onChange={handlePasswordChange}
               onKeyPress={handleKeyPress}
             />
+        </div><br />
           <Button
             variant="contained"
             size="large"
-            color="secondary"
+            color="primary"
             className={classes.loginBtn}
             onClick={handleLogin}
             disabled={state.isButtonDisabled}>
-            Login
+            <ExitToAppIcon />{" "}&emsp;Login
           </Button>
     </form>
   );

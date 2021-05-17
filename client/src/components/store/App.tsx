@@ -1,11 +1,14 @@
 import './index.css'
 import Product from './components/Products';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Filter  from './components/filter';
 import Cart from './components/cart'
 import Button from 'react-bootstrap/Button'
 import Modal from '../seller/pages/Modal'
 import Wishlist from './components/wishlist'
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import * as BiIcons from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 interface produce 
 {
@@ -114,9 +117,12 @@ export default function App()
           <div className="grid-container">
             <header>
                 <a href="/">React shopping Cart</a>
-                <Button variant="primary" onClick={() => setModalShow(true)}>
-                Launch vertically center
-             </Button>
+                <Link to='/' className='logout'>
+                    <BiIcons.BiLogOut/>
+                </Link>
+                <Button onClick={() => setModalShow(true)} className="wish">
+                    <FavoriteIcon />
+                </Button>
             </header>
             <main>
 
@@ -135,7 +141,7 @@ export default function App()
                     <Modal
                     show={modalShow}
                     value={<Wishlist removeFromwish={removeFromwish} addTocart={addToCart} cartItems={whishshopcart}/>}
-                    title="Whishlist"
+                    title="Wishlist"
                     onHide={() => setModalShow(false)}
                     />
                 </div>

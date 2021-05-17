@@ -5,6 +5,7 @@ import 'jquery'
 import Buyer from './components/login form/buyer';
 import Seller from './components/login form/seller';
 
+
 function Slide() {
   useEffect(()=>{
     $(document).ready(function(){

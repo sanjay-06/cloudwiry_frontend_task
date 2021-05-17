@@ -55,18 +55,18 @@ a{
     font-size: 18px;
 }
 .login-info-box{
-    width:30%;
+    width:40%;
     padding:0 50px;
-    top:20%;
-    left:0;
+    top:25%;
+    left:0%;
     position:absolute;
     text-align:left;
 }
 .register-info-box{
-    width:30%;
+    width:40%;
     padding:0 50px;
-    top:20%;
-    right:0;
+    top:25%;
+    right:0%;
     position:absolute;
     text-align:left;
     

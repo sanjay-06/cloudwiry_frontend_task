@@ -29,6 +29,14 @@ def reqdata():
     print(collect.insert_one(request.get_json()))
     return 'Done',201
 
+@app.route('/delete/<id>',methods=['DELETE'])
+def reqdeletedata(id):
+    print( ObjectId(id))
+    print("Got delete request")
+    print("Connected to the http server successfully")
+    collect.delete_one({"_id":ObjectId(id)})
+    return 'Done',201
+
 @app.route('/getvalues',methods=['GET'])
 def getvalues():
     print("Got get request")
@@ -37,7 +45,7 @@ def getvalues():
     for x in collect.find():
         product.append(x)
     res = json.dumps({'product' : product}, cls=JSONEncoder)
-    print(res)
+  #  print(res)
     return res,200
 
 app.run(host='0.0.0.0', port=8000,debug=True)
