@@ -5,6 +5,7 @@ import shopping from './components/store/App'
 import Home from './components/seller/pages/Home';
 import Reports from './components/seller/pages/Reports';
 import Products from './components/seller/pages/Products';
+import Support from './components/seller/pages/support';
 
 const Application = () => (
   <Router>
@@ -13,6 +14,7 @@ const Application = () => (
     <Route path='/Home' exact component={Home} />
     <Route path='/reports' component={Reports} />
     <Route path='/products' component={Products} />
+    <Route path='/support' component={Support} />
   </Router>
 );
 

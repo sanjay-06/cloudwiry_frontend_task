@@ -99,6 +99,25 @@ footer {
 .sidebar {
   flex: 1 20rem;
 }
+.all 
+{
+  margin-top: 5%;
+}
+.alert
+{
+  width: 50%;
+  margin:auto;
+}
+.alert-div
+{
+  margin-top: 6%;
+}
+.carousel
+{
+  margin:auto;
+  margin-top: 5%;
+  width: 75%;
+}
 
 /* products */
 .products {
