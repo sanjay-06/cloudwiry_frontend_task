@@ -6,7 +6,7 @@ git clone 'https://github.com/sanjay-06/cloudwiry_frontend_task'
 
 after cloning the repository
 
-###start the frontend
+##start the frontend
 cd client
 npm install
 npm start
@@ -18,5 +18,5 @@ then start the application by running
 
 python or python3 based on the system you use
 
-###start the flask app
+##start the flask app
 python server.py
