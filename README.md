@@ -3,7 +3,7 @@
 
 <h1>WEBSITE</h1>
 
-![gitlogo](login.png)
+![gitlogo](login.PNG)
 
 # Package Usage
 
