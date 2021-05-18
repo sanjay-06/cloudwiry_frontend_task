@@ -11,7 +11,7 @@
 
 
 #### clone the repository
-    git clone 'https://github.com/sanjay-06/cloudwiry_frontend_task'
+    git clone https://github.com/sanjay-06/cloudwiry_frontend_task
       
 ### Website Link
 <a href="https://site-linked.herokuapp.com/" target="new">CLICK HERE ITS THE APP LINK</a>
