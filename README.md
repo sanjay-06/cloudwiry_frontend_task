@@ -1,22 +1,29 @@
+
 # cloudwiry_frontend_task
-This is a task given at cloudwiry
 
-#Steps to start the application
-git clone 'https://github.com/sanjay-06/cloudwiry_frontend_task'
+<h1>WEBSITE</h1>
 
-after cloning the repository
+![gitlogo](login.png)
 
-##start the frontend
-cd client
-npm install
-npm start
+# Package Usage
+
+## Quick start
+
+clone the repository
+#### Start the server
+    git clone 'https://github.com/sanjay-06/cloudwiry_frontend_task'
+      
+### Website Link
+<a href="https://site-linked.herokuapp.com/" target="new">CLICK HERE ITS THE APP LINK</a>
+
+#### Start the server
+      pip install requirements.txt
+      python server.py
+
+#### Start the client
+      cd client
+      npm install
+      npm start
 
 
-After starting the reactjs frontend move to python server folder by cd command and pip install requirements.txt
 
-then start the application by running
-
-python or python3 based on the system you use
-
-##start the flask app
-python server.py
