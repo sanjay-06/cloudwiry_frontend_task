@@ -1,0 +1,4 @@
+python==3.8.0
+flask==2.0.0
+pymongo==2.7.1
+flask_cors==3.0.10
