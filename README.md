@@ -9,8 +9,8 @@
 
 ## Quick start
 
-clone the repository
-#### Start the server
+
+#### clone the repository
     git clone 'https://github.com/sanjay-06/cloudwiry_frontend_task'
       
 ### Website Link
