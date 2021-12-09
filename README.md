@@ -5,6 +5,11 @@
 
 ![gitlogo](login.PNG)
 
+#### Credentials
+      abc@email.com
+      password
+
+
 # Package Usage
 
 ## Quick start
@@ -24,6 +29,7 @@
       cd client
       npm install
       npm start
+
 
 
 
